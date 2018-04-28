@@ -46,5 +46,15 @@ public class ItemController {
     @RequestMapping(value = "login")
     public String login(HttpServletRequest request, Model model) {
         return "login";
+    }   @RequestMapping(value = "userindex")
+    public String userindex(HttpServletRequest request, Model model) {
+        System.out.println("admin/userindex");
+        return "admin/userindex";
+    }
+    @RequestMapping(value = "adminindex")
+
+    public String adminindex(HttpServletRequest request, Model model) {
+        System.out.println("admin/index");
+        return "admin/index";
     }
 }
