@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--别名-->
+    <typeAliases>
+        <package name="pojo"/>
+        <!--<typeAlias type="domain.Count" alias="Count"/>-->
+    </typeAliases>
+   <!-- &lt;!&ndash; Database Connection  &ndash;&gt;
+    &lt;!&ndash;  read file必须放在文件开头  &ndash;&gt;
+    <properties  resource="db.properties"/>
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driverClass}" />
+                <property name="url" value="${jdbc.jdbcUrl}" />
+                <property name="username" value="${jdbc.user}" />
+                <property name="password" value="${jdbc.password}" />
+            </dataSource>
+        </environment>
+    </environments>
+
+    &lt;!&ndash;   &ndash;&gt;
+    <mappers>
+        <mapper resource="mybatis/Count.xml" />
+        &lt;!&ndash;下面方法要求xml文件和Mapper文件同名，同文件夹下&ndash;&gt;
+        &lt;!&ndash;<mapper class="domain.Count" />&ndash;&gt;
+    </mappers>-->
+</configuration>

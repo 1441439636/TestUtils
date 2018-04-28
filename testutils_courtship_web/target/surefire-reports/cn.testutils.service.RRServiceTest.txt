@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: cn.testutils.service.RRServiceTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.607 s - in cn.testutils.service.RRServiceTest

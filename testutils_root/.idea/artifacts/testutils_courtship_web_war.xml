@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="testutils_courtship_web:war">
+    <output-path>$PROJECT_DIR$/../testutils_courtship_web/target</output-path>
+    <root id="archive" name="testutils_courtship_web.war">
+      <element id="artifact" artifact-name="testutils_courtship_web:war exploded" />
+    </root>
+  </artifact>
+</component>

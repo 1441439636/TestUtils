@@ -1,0 +1,7 @@
+0:0:0:0:0:0:0:1 - - [29/Mar/2018:10:27:46 +0800] "GET /index.jsp HTTP/1.1" 200 287 http-bio-8080-exec-1 473
+127.0.0.1 - - [29/Mar/2018:11:23:03 +0800] "GET /Index HTTP/1.1" 404 961 http-bio-8080-exec-1 36
+127.0.0.1 - - [29/Mar/2018:11:23:08 +0800] "GET /index.jsp HTTP/1.1" 200 287 http-bio-8080-exec-2 26
+127.0.0.1 - - [29/Mar/2018:11:23:20 +0800] "GET /item/list HTTP/1.1" 404 969 http-bio-8080-exec-3 1
+0:0:0:0:0:0:0:1 - - [29/Mar/2018:11:23:27 +0800] "GET /item/list HTTP/1.1" 404 969 http-bio-8080-exec-6 2
+0:0:0:0:0:0:0:1 - - [29/Mar/2018:11:23:27 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-5 1
+0:0:0:0:0:0:0:1 - - [29/Mar/2018:11:23:32 +0800] "GET /item/list.do HTTP/1.1" 200 66 http-bio-8080-exec-8 353

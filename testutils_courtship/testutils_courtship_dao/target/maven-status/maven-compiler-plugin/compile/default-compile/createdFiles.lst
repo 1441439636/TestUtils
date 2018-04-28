@@ -1,0 +1,7 @@
+cn\testutils\dao\TtCourtshipCollectMapper.class
+cn\testutils\dao\TtCourtshipPagesMapper.class
+cn\testutils\dao\TtCourtshipPagesParametersMapper.class
+cn\testutils\dao\TtCourtshipPagesUseingParametersMapper.class
+cn\testutils\dao\TtAccountsMapper.class
+cn\testutils\dao\TtCourtshipUsingMsgMapper.class
+cn\testutils\dao\TtCourtshipUseingMapper.class

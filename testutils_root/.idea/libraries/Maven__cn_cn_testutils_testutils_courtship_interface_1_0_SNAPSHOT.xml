@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Maven: cn.cn.testutils:testutils_courtship_interface:1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://D:/WEB_maven/repo/cn/cn/testutils/testutils_courtship_interface/1.0-SNAPSHOT/testutils_courtship_interface-1.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../testutils_courtship/testutils_courtship_dao/testutils_courtship_interface-1.0-SNAPSHOT-javadoc.jar!/" />
+      <root url="jar://D:/WEB_maven/repo/cn/cn/testutils/testutils_courtship_interface/1.0-SNAPSHOT/testutils_courtship_interface-1.0-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../testutils_courtship/testutils_courtship_dao/testutils_courtship_interface-1.0-SNAPSHOT-sources.jar!/" />
+      <root url="jar://D:/WEB_maven/repo/cn/cn/testutils/testutils_courtship_interface/1.0-SNAPSHOT/testutils_courtship_interface-1.0-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

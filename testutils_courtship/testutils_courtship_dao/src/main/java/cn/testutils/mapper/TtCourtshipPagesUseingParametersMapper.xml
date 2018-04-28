@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.testutils.dao.TtCourtshipPagesUseingParametersMapper">
+  <resultMap id="BaseResultMap" type="cn.testutils.pojo.TtCourtshipPagesUseingParameters">
+    <result column="CU_ID" jdbcType="INTEGER" property="cuId" />
+    <result column="CP_ID" jdbcType="INTEGER" property="cpId" />
+    <result column="CPUP_INDEX" jdbcType="INTEGER" property="cpupIndex" />
+    <result column="CPUP_CONTENT" jdbcType="VARCHAR" property="cpupContent" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    CU_ID, CP_ID, CPUP_INDEX, CPUP_CONTENT
+  </sql>
+  <select id="selectByExample" parameterType="cn.testutils.pojo.TtCourtshipPagesUseingParametersExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from TT_COURTSHIP_PAGES_USEING_PARAMETERS
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <delete id="deleteByExample" parameterType="cn.testutils.pojo.TtCourtshipPagesUseingParametersExample">
+    delete from TT_COURTSHIP_PAGES_USEING_PARAMETERS
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="cn.testutils.pojo.TtCourtshipPagesUseingParameters">
+    insert into TT_COURTSHIP_PAGES_USEING_PARAMETERS (CU_ID, CP_ID, CPUP_INDEX, 
+      CPUP_CONTENT)
+    values (#{cuId,jdbcType=INTEGER}, #{cpId,jdbcType=INTEGER}, #{cpupIndex,jdbcType=INTEGER}, 
+      #{cpupContent,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="cn.testutils.pojo.TtCourtshipPagesUseingParameters">
+    insert into TT_COURTSHIP_PAGES_USEING_PARAMETERS
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="cuId != null">
+        CU_ID,
+      </if>
+      <if test="cpId != null">
+        CP_ID,
+      </if>
+      <if test="cpupIndex != null">
+        CPUP_INDEX,
+      </if>
+      <if test="cpupContent != null">
+        CPUP_CONTENT,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="cuId != null">
+        #{cuId,jdbcType=INTEGER},
+      </if>
+      <if test="cpId != null">
+        #{cpId,jdbcType=INTEGER},
+      </if>
+      <if test="cpupIndex != null">
+        #{cpupIndex,jdbcType=INTEGER},
+      </if>
+      <if test="cpupContent != null">
+        #{cpupContent,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="cn.testutils.pojo.TtCourtshipPagesUseingParametersExample" resultType="java.lang.Long">
+    select count(*) from TT_COURTSHIP_PAGES_USEING_PARAMETERS
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update TT_COURTSHIP_PAGES_USEING_PARAMETERS
+    <set>
+      <if test="record.cuId != null">
+        CU_ID = #{record.cuId,jdbcType=INTEGER},
+      </if>
+      <if test="record.cpId != null">
+        CP_ID = #{record.cpId,jdbcType=INTEGER},
+      </if>
+      <if test="record.cpupIndex != null">
+        CPUP_INDEX = #{record.cpupIndex,jdbcType=INTEGER},
+      </if>
+      <if test="record.cpupContent != null">
+        CPUP_CONTENT = #{record.cpupContent,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update TT_COURTSHIP_PAGES_USEING_PARAMETERS
+    set CU_ID = #{record.cuId,jdbcType=INTEGER},
+      CP_ID = #{record.cpId,jdbcType=INTEGER},
+      CPUP_INDEX = #{record.cpupIndex,jdbcType=INTEGER},
+      CPUP_CONTENT = #{record.cpupContent,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+</mapper>

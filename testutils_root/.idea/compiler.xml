@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="testutils_courtship_dao" />
+        <module name="testutils_courtship_interface" />
+        <module name="testutils_courtship_pojo" />
+        <module name="testutils_courtship_service" />
+        <module name="testutils_courtship_web" />
+        <module name="testutils_manager_dao" />
+        <module name="testutils_manager_interface" />
+        <module name="testutils_manager_mapper" />
+        <module name="testutils_manager_pojo" />
+        <module name="testutils_manager_service" />
+        <module name="testutils_manager_web" />
+        <module name="TestUtils_Utils" />
+        <module name="testutils_utils" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="testutils_courtship" target="1.8" />
+      <module name="testutils_courtship_dao" target="1.8" />
+      <module name="testutils_courtship_interface" target="1.8" />
+      <module name="testutils_courtship_pojo" target="1.8" />
+      <module name="testutils_courtship_service" target="1.8" />
+      <module name="testutils_courtship_web" target="1.8" />
+      <module name="TestUtils_manager" target="1.8" />
+      <module name="testutils_manager" target="1.8" />
+      <module name="testutils_manager_dao" target="1.8" />
+      <module name="testutils_manager_interface" target="1.8" />
+      <module name="testutils_manager_mapper" target="1.8" />
+      <module name="testutils_manager_pojo" target="1.8" />
+      <module name="testutils_manager_service" target="1.8" />
+      <module name="testutils_manager_web" target="1.8" />
+      <module name="TestUtils_root" target="1.8" />
+      <module name="testutils_root" target="1.8" />
+      <module name="testutils_utils" target="1.8" />
+      <module name="TestUtils_Utils" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
