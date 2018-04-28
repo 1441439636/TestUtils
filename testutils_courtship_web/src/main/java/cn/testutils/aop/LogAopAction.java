@@ -47,7 +47,7 @@ public class LogAopAction {
         //日志实体对象
         HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
         //获取当前登陆用户信息
-        System.out.println(request.getParameter("id"));
+        System.out.println("username  = " +request.getParameter("username"));
 
 
         // 拦截的实体类，就是当前正在执行的controller

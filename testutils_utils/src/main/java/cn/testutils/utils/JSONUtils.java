@@ -5,8 +5,12 @@ package cn.testutils.utils;
  * JSON transition
  */
 public class JSONUtils {
-    public String JsonToEndURL(String json) {
+    public static String JsonToEndURL(String json) {
         json = json.replaceAll(",", "&");
         return json.replaceAll(":", "=");
+    }
+    public static String EndURLTOJSON(String json) {
+        json = json.replaceAll("&", "\",\"");
+        return "{\""+json.replaceAll("=", "\":\"")+"\"}";
     }
 }

@@ -7,9 +7,9 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * 淘淘商城自定义响应结构
+ *  自定义响应结构
  */
-public class ShopResult  implements Serializable {
+public class UtilResult implements Serializable {
 
     // 定义jackson对象
     private static final ObjectMapper MAPPER = new ObjectMapper();
@@ -23,33 +23,33 @@ public class ShopResult  implements Serializable {
     // 响应中的数据
     private Object data;
 
-    public static ShopResult build(Integer status, String msg, Object data) {
-        return new ShopResult(status, msg, data);
+    public static UtilResult build(Integer status, String msg, Object data) {
+        return new UtilResult(status, msg, data);
     }
 
-    public static ShopResult ok(Object data) {
-        return new ShopResult(data);
+    public static UtilResult ok(Object data) {
+        return new UtilResult(data);
     }
 
-    public static ShopResult ok() {
-        return new ShopResult(null);
+    public static UtilResult ok() {
+        return new UtilResult(null);
     }
 
-    public ShopResult() {
+    public UtilResult() {
 
     }
 
-    public static ShopResult build(Integer status, String msg) {
-        return new ShopResult(status, msg, null);
+    public static UtilResult build(Integer status, String msg) {
+        return new UtilResult(status, msg, null);
     }
 
-    public ShopResult(Integer status, String msg, Object data) {
+    public UtilResult(Integer status, String msg, Object data) {
         this.status = status;
         this.msg = msg;
         this.data = data;
     }
 
-    public ShopResult(Object data) {
+    public UtilResult(Object data) {
         this.status = 200;
         this.msg = "OK";
         this.data = data;
@@ -90,10 +90,10 @@ public class ShopResult  implements Serializable {
      * @param clazz TaotaoResult中的object类型
      * @return
      */
-    public static ShopResult formatToPojo(String jsonData, Class<?> clazz) {
+    public static UtilResult formatToPojo(String jsonData, Class<?> clazz) {
         try {
             if (clazz == null) {
-                return MAPPER.readValue(jsonData, ShopResult.class);
+                return MAPPER.readValue(jsonData, UtilResult.class);
             }
             JsonNode jsonNode = MAPPER.readTree(jsonData);
             JsonNode data = jsonNode.get("data");
@@ -117,9 +117,9 @@ public class ShopResult  implements Serializable {
      * @param json
      * @return
      */
-    public static ShopResult format(String json) {
+    public static UtilResult format(String json) {
         try {
-            return MAPPER.readValue(json, ShopResult.class);
+            return MAPPER.readValue(json, UtilResult.class);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -133,7 +133,7 @@ public class ShopResult  implements Serializable {
      * @param clazz 集合中的类型
      * @return
      */
-    public static ShopResult formatToList(String jsonData, Class<?> clazz) {
+    public static UtilResult formatToList(String jsonData, Class<?> clazz) {
         try {
             JsonNode jsonNode = MAPPER.readTree(jsonData);
             JsonNode data = jsonNode.get("data");
@@ -150,7 +150,7 @@ public class ShopResult  implements Serializable {
 
     @Override
     public String toString() {
-        return "ShopResult{" +
+        return "UtilResult{" +
                 "status=" + status +
                 ", msg='" + msg + '\'' +
                 ", data=" + data +
