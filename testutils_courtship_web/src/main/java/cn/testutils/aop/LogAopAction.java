@@ -30,7 +30,7 @@ public class LogAopAction {
     //定义本次log实体
     private Log log = new Log();
 
-    @Pointcut("execution(* cn.testutils.controller..*.*(..))")
+    @Pointcut("execution(* cn.testutils.controller.AdminController.*(..))")
     private void controllerAspect() {
     }
 

@@ -30,7 +30,7 @@
     <!-- 切面 -->
     <aop:config>
         <aop:advisor advice-ref="txAdvice"
-                     pointcut="execution(* cn.service..*.*(..))"/>
+                     pointcut="execution(* cn.testutils.service..*.*(..))"/>
     </aop:config>
     <import resource="DBContext.xml"/>
 </beans>

@@ -22,8 +22,19 @@
           p:driverClassName="${jdbc.driverClass}"
           p:url="${jdbc.jdbcUrl}"
           p:username="${jdbc.user}" p:password="${jdbc.password}"
-          p:maxActive="10" p:maxIdle="5"
+          p:maxActive="10"
+          p:maxIdle="5"
     />
+    <!-- 初始化连接大小 -->
+    <!-- "initialSize"  >-->
+    <!-- 连接池最大数量 -->
+    <!-- "maxActive" -->
+    <!-- 连接池最大空闲 -->
+    <!-- "maxIdle"  -->
+    <!-- 连接池最小空闲 -->
+    <!-- "minIdle"  -->
+    <!-- 获取连接最大等待时间 -->
+    <!--"maxWait" -->
 
     <!--定义JDBC模版Bean-->
     <!--<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate" p:dataSource-ref="dataSource"/>-->

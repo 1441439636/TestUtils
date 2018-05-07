@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="cn.cn.testutils.dao.TtCourtshipPagesMapper">
+<mapper namespace="cn.testutils.dao.TtCourtshipPagesMapper">
   <resultMap id="BaseResultMap" type="cn.testutils.pojo.TtCourtshipPages">
     <id column="CP_ID" jdbcType="INTEGER" property="cpId" />
     <result column="CP_ADDRESS" jdbcType="VARCHAR" property="cpAddress" />

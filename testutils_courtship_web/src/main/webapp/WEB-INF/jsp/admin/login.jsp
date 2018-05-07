@@ -28,7 +28,7 @@
 <div class="login_box">
     <div class="login_l_img"><img src="${pageContext.request.contextPath}/images/admin/login-img.png"/></div>
     <div class="login">
-        <div class="login_logo"><a href="#"><img src="${pageContext.request.contextPath}/images/admin/login_logo.png"/></a>
+        <div class="login_logo"><a href="#"  style="margin-top: 80px;"><img src="${pageContext.request.contextPath}/images/admin/login_logo.png" /></a>
         </div>
         <div class="login_name">
             <p>后台管理系统</p>
@@ -38,7 +38,7 @@
             <input name="password" type="password" id="password" placeholder="密码"/>
             <div>
                 <input name="checkcode" type="text" id="checkcode" style="width:50%;" placeholder="验证码"/>
-                <img id="logincheckimg" src="${pageContext.request.contextPath }/admin/changeimg"                 />
+                <img id="logincheckimg" src="${pageContext.request.contextPath }/admin/changeimg"/>
             </div>
             <input value="登录" style="width:100%;" type="submit">
             <span id="msg"  class="span_msg" style="display: none"/>
@@ -60,7 +60,8 @@
             }, "json");
         });
         $("#logincheckimg"). click(function () {
-            $("#logincheckimg")[0].src='${pageContext.request.contextPath }/admin/changeimg';
+            $("#checkcode").val("");
+            $("#logincheckimg")[0].src='${pageContext.request.contextPath}/admin/changeimg?date='+new Date().getTime();
         });
     });
 
