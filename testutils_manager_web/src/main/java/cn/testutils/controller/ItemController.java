@@ -1,8 +1,6 @@
 package cn.testutils.controller;
 
-import cn.testutils.service.ISendPortService;
 import cn.testutils.utils.UtilResult;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -17,14 +15,11 @@ public class ItemController {
         System.out.println("--------------------------------    ItemController   --------------------------------  ");
     }
 
-    @Autowired
-    private ISendPortService sendPortService;
-
     @RequestMapping(value = "item/list")
     @ResponseBody
     public UtilResult getItemList(Integer page, Integer rows) {
         String json = ("{name:name1,age:123}");
-        sendPortService.print("122456475768");
+
         return UtilResult.ok(json);
     }
 

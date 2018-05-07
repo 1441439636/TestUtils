@@ -1,5 +1,6 @@
 package cn.testutils.controller;
 
+import cn.testutils.service.IRRService;
 import cn.testutils.service.ISendPortService;
 import cn.testutils.utils.UtilResult;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +21,8 @@ public class ItemController {
     public ItemController() {
         System.out.println("--------------------------------    ItemController   --------------------------------  ");
     }
-
+    @Autowired
+    private IRRService irrService;
     @Autowired
     private ISendPortService sendPortService;
 
@@ -29,6 +31,7 @@ public class ItemController {
     public UtilResult getItemList(Integer page, Integer rows) {
         String json = ("{name:name1,age:123}");
         sendPortService.print("99999999999999999");
+        irrService.Print("item/list");
         return UtilResult.ok(json);
     }
 

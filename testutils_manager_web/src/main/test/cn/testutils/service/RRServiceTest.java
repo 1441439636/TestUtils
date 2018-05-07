@@ -1,6 +1,5 @@
 package cn.testutils.service;
 
-import cn.testutils.service.impl.RRService;
 import org.testng.annotations.Test;
 
 /**

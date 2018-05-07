@@ -24,21 +24,21 @@
     <dependencies>
 
         <!-- 依赖于service的接口 -->
-        <!--        <dependency>
-                    <groupId>cn.testutils</groupId>
-                    <artifactId>testutils_manager_interface</artifactId>
-                    <version>1.0-SNAPSHOT</version>
-                </dependency>
-                <dependency>
-                    <groupId>cn.testutils</groupId>
-                    <artifactId>testutils_manager_service</artifactId>
-                    <version>1.0-SNAPSHOT</version>
-                </dependency>
-                <dependency>
-                    <groupId>cn.testutils</groupId>
-                    <artifactId>testutils_manager_dao</artifactId>
-                    <version>1.0-SNAPSHOT</version>
-                </dependency>-->
+        <!--   <dependency>
+                 <groupId>cn.testutils</groupId>
+                 <artifactId>testutils_courtship_interface</artifactId>
+                 <version>1.0-SNAPSHOT</version>
+             </dependency>
+             <dependency>
+                 <groupId>cn.testutils</groupId>
+                 <artifactId>testutils_courtship_service</artifactId>
+                 <version>1.0-SNAPSHOT</version>
+             </dependency>
+             <dependency>
+                 <groupId>cn.testutils</groupId>
+                 <artifactId>testutils_courtship_dao</artifactId>
+                 <version>1.0-SNAPSHOT</version>
+             </dependency>-->
         <dependency>
             <groupId>cn.testutils</groupId>
             <artifactId>testutils_utils</artifactId>

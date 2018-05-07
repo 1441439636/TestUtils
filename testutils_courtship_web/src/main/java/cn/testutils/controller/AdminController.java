@@ -1,9 +1,11 @@
 package cn.testutils.controller;
 
+import cn.testutils.service.impl.SendPortService;
 import cn.testutils.utils.ImageUtil;
 import cn.testutils.utils.JSONUtils;
 import cn.testutils.utils.UtilResult;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,6 +26,15 @@ import java.util.Map;
  */
 @Controller
 public class AdminController {
+
+
+    private SendPortService sendPortService;
+
+    @Autowired
+    public AdminController(SendPortService sendPortService) {
+        this.sendPortService = sendPortService;
+    }
+
     @RequestMapping(value = "admin/checkname", method = RequestMethod.POST)
     @ResponseBody
     public UtilResult AdminCheckName(@RequestBody String jsonString) {

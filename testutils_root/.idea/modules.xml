@@ -11,7 +11,6 @@
       <module fileurl="file://$PROJECT_DIR$/../testutils_manager/testutils_manager.iml" filepath="$PROJECT_DIR$/../testutils_manager/testutils_manager.iml" />
       <module fileurl="file://$PROJECT_DIR$/../testutils_manager/testutils_manager_dao/testutils_manager_dao.iml" filepath="$PROJECT_DIR$/../testutils_manager/testutils_manager_dao/testutils_manager_dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/../testutils_manager/testutils_manager_interface/testutils_manager_interface.iml" filepath="$PROJECT_DIR$/../testutils_manager/testutils_manager_interface/testutils_manager_interface.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../testutils_manager/testutils_manager_pojo/testutils_manager_mapper.iml" filepath="$PROJECT_DIR$/../testutils_manager/testutils_manager_pojo/testutils_manager_mapper.iml" />
       <module fileurl="file://$PROJECT_DIR$/../testutils_manager/testutils_manager_pojo/testutils_manager_pojo.iml" filepath="$PROJECT_DIR$/../testutils_manager/testutils_manager_pojo/testutils_manager_pojo.iml" />
       <module fileurl="file://$PROJECT_DIR$/../testutils_manager/testutils_manager_service/testutils_manager_service.iml" filepath="$PROJECT_DIR$/../testutils_manager/testutils_manager_service/testutils_manager_service.iml" />
       <module fileurl="file://$PROJECT_DIR$/../testutils_manager_web/testutils_manager_web.iml" filepath="$PROJECT_DIR$/../testutils_manager_web/testutils_manager_web.iml" />

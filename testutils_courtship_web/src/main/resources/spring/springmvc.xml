@@ -23,9 +23,15 @@
     <context:component-scan base-package="cn.testutils.controller"/>
     <context:component-scan base-package="cn.testutils.service"/>
     <context:component-scan base-package="cn.testutils.aop"/>
+    <context:component-scan base-package="cn.testutils.bean"/>
     <!--mvc注解驱动，自动配置 处理器映射器、处理器适配器（不用配置bean）-->
     <mvc:annotation-driven/>
-
+    <!--开启自动注入注解方式1-->
+    <context:annotation-config/>
+    <!--开启主动注入注解方式2-->
+    <!--<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>-->
+    <!--开启@Required annotation-->
+    <bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"/>
     <!--上传图片实现类-->
     <!--<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"-->
     <!--p:maxUploadSize="5242880" p:maxInMemorySize="40960"-->
@@ -72,4 +78,11 @@
     <!--<bean id="solrServer" class="org.apache.solr.client.solrj.cn.testutils.service.impl.HttpSolrServer">-->
     <!--<constructor-arg value="http://localhost:8080/solr/collection1"/>-->
     <!--</bean>-->
+
+    <bean id="Person" class="cn.testutils.bean.Person">
+        <property name="name" value="This is Name1 "/>
+        <property name="sex" value="This is Sex1"/>
+    </bean>
+
+
 </beans>

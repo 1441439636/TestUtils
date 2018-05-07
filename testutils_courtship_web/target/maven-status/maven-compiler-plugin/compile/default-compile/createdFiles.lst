@@ -1,3 +1,4 @@
 cn\testutils\controller\AdminController.class
 cn\testutils\aop\LogAopAction.class
 cn\testutils\aop\SystemLog.class
+cn\testutils\bean\Person.class
